@@ -1,0 +1,19 @@
+{
+  "name": "jokenpo",
+  "version": "1.0.0",
+  "description": "O objetivo é fazer um juiz de Jokenpo que dada a jogada dos dois jogadores informa o resultado da partida.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Marcelo Augusto",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.4"
+  }
+}
