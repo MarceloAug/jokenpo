@@ -26,7 +26,7 @@ Follow the steps to run the project:
     - Go to the folder `cd jokenpo`
     - Run `npm install`
     - Run server `npm start`
-    
+
 - post json example: 
     {
         "playerOne": "pedra",
@@ -34,6 +34,8 @@ Follow the steps to run the project:
     }
 - Change the values of playerOne and playerTwo to see the results
 
+### Tests
+- Run `npm tests`
 ### API Documentation
 - Routes of API
 

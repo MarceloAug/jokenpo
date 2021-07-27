@@ -1,7 +1,8 @@
 const getJokenpo = require('../controller/jokenpo');
 const request = require("supertest");
 
-const url = url;
+const url = "http://localhost:3001";
+
 describe('Jokenpo testes', () =>{
   	it("Jogador 1 Vence, Pedra ganha", async () => {
     	const res = await request(url)
@@ -71,6 +72,6 @@ describe('Jokenpo testes', () =>{
 			playerTwo:"papeeeeel",
 		});
 		expect(res.statusCode).toEqual(200);
-		expect(res.body.message).toEqual("Não foi possivel identificar um vencedor!");
+		expect(res.body.message).toEqual("Erro ao identificar vencedor, verifique os movimentos dos jogadores");
   	});
 })
