@@ -29,19 +29,52 @@ class Jokenpo {
   
 function compareJokenpo(playerOneValue, playerTwoValue) {
     
-    if (playerOneValue === playerTwoValue) 
+    retorno = '';
+    if (playerOneValue === playerTwoValue){ 
         return 'Empatou! Tente novamente!';
-    
-    if (playerOneValue === 'tesoura')
-    return (playerTwoValue === 'papel') ? 'Jogador 1 Venceu!' : 'Jogador 2 Venceu!';
+    }
+    switch (playerOneValue) {
+        case 'papel':
+            
+            if(playerTwoValue === 'pedra'){
+                retorno = 'Jogador 1 Venceu!' ;
+            }else if(playerTwoValue === 'tesoura'){
+                retorno = 'Jogador 2 Venceu!';
+            }else{
+                retorno = 'Erro ao identificar vencedor, verifique os movimentos dos jogadores';
+            }
 
-    if (playerOneValue === 'papel')    
-    return (playerTwoValue === 'pedra') ? 'Jogador 1 Venceu!' : 'Jogador 2 Venceu!';
+            break;
 
-    if (playerOneValue === 'pedra')
-    return (playerTwoValue === 'tesoura') ?'Jogador 1 Venceu!' : 'Jogador 2 Venceu!';
+        case 'tesoura':
 
-    return "Não foi possivel identificar um vencedor!"
+            if(playerTwoValue === 'papel'){
+                retorno = 'Jogador 1 Venceu!' ;
+            }else if(playerTwoValue === 'pedra'){
+                retorno = 'Jogador 2 Venceu!';
+            }else{
+                retorno = 'Erro ao identificar vencedor, verifique os movimentos dos jogadores';
+            }
+
+            break;
+
+        case 'pedra':
+            if(playerTwoValue === 'tesoura'){
+                retorno = 'Jogador 1 Venceu!' ;
+            }else if(playerTwoValue === 'papel'){
+                retorno = 'Jogador 2 Venceu!';
+            }else{
+                retorno = 'Erro ao identificar vencedor, verifique os movimentos dos jogadores';
+            }
+
+            break;
+
+        default:
+            retorno = "Erro ao identificar vencedor, verifique os movimentos dos jogadores";
+            break;
+    }
+
+    return retorno;
 }
   
 module.exports = new Jokenpo();
