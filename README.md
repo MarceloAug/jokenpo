@@ -17,13 +17,13 @@ O objetivo é fazer um juiz de Jokenpo que dada a jogada dos dois jogadores info
 Follow the steps to run the project:
 
 - [Clone repository or download it.](https://github.com/MarceloAug/jokenpo.git)
-- Go to the folder `cd jokenpo`
+- Go to the folder `cd jokenpo-master`
 - Run `npm install`
 - Run server `node server.js`
 - Execute with insomnia or postman `http://localhost:3001` 
     or
     - [Clone repository or download it.](https://github.com/MarceloAug/jokenpo-front.git)
-    - Go to the folder `cd jokenpo`
+    - Go to the folder `jokenpo-front-master`
     - Run `npm install`
     - Run server `npm start`
 
